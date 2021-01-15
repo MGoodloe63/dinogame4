@@ -1,3 +1,6 @@
+namespace SpriteKind {
+    export const Cacti = SpriteKind.create()
+}
 scene.setBackgroundImage(img`
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
@@ -120,3 +123,6 @@ scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     `)
+game.onUpdateInterval(500, function () {
+	
+})
