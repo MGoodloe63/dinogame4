@@ -1,8 +1,11 @@
 namespace SpriteKind {
     export const Cacti = SpriteKind.create()
 }
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+	
+})
 function dinofunc (dino: Sprite) {
-    mySprite = sprites.create(img`
+    dino = sprites.create(img`
         ................................................................
         ................................................................
         ................................................................
@@ -68,9 +71,10 @@ function dinofunc (dino: Sprite) {
         777777.........................7777777777ff.....................
         777.............................................................
         `, SpriteKind.Player)
+    dino.setPosition(38, 47)
 }
 let cloud: Sprite = null
-let mySprite: Sprite = null
+let dino: Sprite = null
 scene.setBackgroundImage(img`
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
@@ -193,6 +197,7 @@ scene.setBackgroundImage(img`
     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
     `)
+dinofunc(dino)
 game.onUpdateInterval(10000, function () {
     cloud = sprites.create(img`
         .............................................
